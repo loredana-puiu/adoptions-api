@@ -1,4 +1,4 @@
-package com.p5.adoptions.api.controllers;
+package com.p5.adoptions.controllers;
 
 import com.p5.adoptions.model.Animal;
 import com.p5.adoptions.model.Cat;

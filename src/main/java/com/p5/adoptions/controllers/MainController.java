@@ -1,4 +1,4 @@
-package com.p5.adoptions.api.controllers;
+/** package com.p5.adoptions.controllers;
 
 
 import org.springframework.http.ResponseEntity;
@@ -25,3 +25,4 @@ public class MainController {
         return "Hello owner";
     }
 }
+*/
