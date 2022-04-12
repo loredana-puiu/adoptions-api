@@ -1,20 +1,26 @@
 package com.p5.adoptions.model;
 
-/** An abstract method allows a method without body
- * An abstract class can not be instantiated
+/**
+ * An abstract class, cannot be instantiated anymore
+ * <p>
  * Pluses over interface:
- * we can field private static, non-static , protected
- * we can body to function
- * we can abstract methods == interface methods
- * Constructors
+ * - we can fields private static, non-static,protected
+ * - we can body to functions
+ * - we can abstract methods == interface methods
+ * - constructors
  *
- * minuses:
- * limits inheritance, becauase we need to extend this in child, AND WE CAN ONLY EXTENDS ONCE
+ * Minuses:
+ * - IMPORTANT!!!  Limits inheritance, because we need to extend this in child, AND WE CAN ONLY EXTENDS ON
  */
+public abstract class AbstractAnimal
+{
+    /**
+     * An abstract method allows a method without body
+     *
+     * @return
+     */
 
-public  abstract class AbstractAnimal {
+    protected String customField;
 
     public abstract String whatDoesItEats();
 }
-
-

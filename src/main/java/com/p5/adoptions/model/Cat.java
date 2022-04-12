@@ -1,49 +1,52 @@
 package com.p5.adoptions.model;
 
-public class Cat extends Animal implements AnimalInterface{
+public class Cat extends Animal implements AnimalInterface
+{
+    public static String staticField = "This is a static field";
 
     public Integer purrIntensity;
-    public static String staticField = "This is a static field";
-    public Cat(String name, String photo) {
-        //Super is mandatory if we have a constructor with parameters in base class/ or there are more that 1 constructor
+
+    public Cat(String name, String photo)
+    {
+        //Super is mandatory if we have a constructor with parameters in base class
         //MUST BE ON THE FIRST LINE OF THE CHILD'S CONSTRUCTOR
-        //invoaca constructorul din clasa de baza si pot sa i dau paramentrii
         super(name, photo);
-        System.out.println("Construncting a cat");
-        //this (se refera la obiectu curent si ne da acces la toate metodele si fildurile din acel obiect)
-         this.purrIntensity = 5;
+        System.out.println("Constructing a cat");
+        this.purrIntensity = 5;
     }
-    public Cat(String name, String photo , Integer purrIntensity) {
+
+    public Cat(String name, String photo, Integer purrIntensity)
+    {
         super(name, photo);
         this.purrIntensity = purrIntensity;
-
     }
 
-
-
-
-    @Override //adnotare
-    public  String makeSound(){
+    @Override
+    public String makeSound()
+    {
         return "Miau";
     }
 
     @Override
-    public String whatDoesItEats() {
-        return "Fish";
+    public String whatDoesItEats()
+    {
+        return "Milk";
     }
 
-
     @Override
-    public String howManyLegs() {
+    public String howManyLegs()
+    {
         return "Four";
     }
 
-    // second example of polymorphism OVERLOADING - ometoda poate avea mai multe implementair
-    public String customMethodToCats(){
+    //Second example of polymorphism
+    public String customMethodToCats()
+    {
         return "Cats are cool, only cats can do this";
     }
 
-    public String customMethodToCats(String message){
+    public String customMethodToCats(String message)
+    {
         return message;
     }
 }

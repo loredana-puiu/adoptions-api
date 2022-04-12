@@ -1,23 +1,29 @@
 package com.p5.adoptions.model;
 
-public class Dog extends Animal implements AnimalInterface{
+public class Dog extends Animal implements AnimalInterface
+{
 
-    public Dog(String name, String photo) {
-        super(name, photo); //invoaca constructorul din clasa de baza si pot sa i dau paramentrii
+
+    public Dog(String name, String photo)
+    {
+        super(name, photo);
     }
 
-    @Override //din clasa de baza suprascrie functionalitatea
-    public  String makeSound(){
+    @Override
+    public String makeSound()
+    {
         return "Ham";
     }
 
     @Override
-    public String whatDoesItEats() {
+    public String whatDoesItEats()
+    {
         return "Bones";
     }
 
     @Override
-    public String howManyLegs() {
+    public String howManyLegs()
+    {
         return "Four";
     }
 }
